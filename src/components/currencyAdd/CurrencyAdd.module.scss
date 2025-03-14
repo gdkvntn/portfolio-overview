@@ -1,0 +1,69 @@
+@use "../../assets/styles/variables.scss";
+
+.container {
+  position: relative;
+}
+
+.currencyContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 400px;
+  width: 330px;
+  padding: 20px;
+  border: 1px solid variables.$primary-color;
+  border-radius: variables.$radius;
+  background-color: variables.$background-color;
+  position: absolute;
+  top: calc(100% + 10px);
+  text-align: center;
+  right: 0;
+
+  input {
+    padding: 0 5px;
+    min-height: 30px;
+    border: none;
+    border-radius: variables.$radius;
+    &:focus-visible {
+      outline: none;
+      border: 1px solid variables.$secondary-color;
+    }
+  }
+}
+.form {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.currency {
+  height: 100%;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 10px;
+
+  li {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    &:hover {
+      color: variables.$secondary-color;
+    }
+  }
+}
+
+.wrapperButtons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto;
+
+  button {
+    width: 45%;
+  }
+
+  .cancelButton {
+    background-color: variables.$accent-color;
+  }
+}

@@ -1,0 +1,13 @@
+.container {
+  padding: 20px 40px;
+
+  h1 {
+    text-transform: uppercase;
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

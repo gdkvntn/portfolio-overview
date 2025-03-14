@@ -1,0 +1,9 @@
+@use "../../../assets/styles/variables.scss";
+
+.button {
+  border: none;
+  width: 100px;
+  height: 30px;
+  border-radius: variables.$radius;
+  background-color: variables.$secondary-color;
+}
